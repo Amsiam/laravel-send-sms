@@ -60,12 +60,12 @@ The package uses a configuration file (`config/sendsms.php`) to set the default 
 <?php
 
 return [
-    'default' => env('SMS_DRIVER', 'bulksmsbd'),
+    'default' => env('SMS_DRIVER', 'bulk_sms'),
 
     'drivers' => [
-        'bulksmsbd' => [
-            'api_key' => env('BULKSMSBD_API_KEY'),
-            'sender_id' => env('BULKSMSBD_SENDER_ID')
+        'bulk_sms' => [
+            'api_key' => env('SMS_BULK_SMS_BD_API_KEY'),
+            'sender_id' => env('SMS_BULK_SMS_BD_SENDERID'),
         ],
         // Add other drivers here
     ],
@@ -76,13 +76,13 @@ return [
 Add the following to your `.env` file to configure the driver:
 
 ```env
-SMS_DRIVER=bulksmsbd
-BULKSMSBD_API_KEY=your_api_key
-BULKSMSBD_SENDER_ID=your_sender_id
+SMS_DRIVER=bulk_sms
+SMS_BULK_SMS_BD_API_KEY=your_api_key
+SMS_BULK_SMS_BD_SENDERID=your_sender_id
 ```
 
 ### Available Configuration Options
-- `default`: The default SMS driver (e.g., `bulksmsbd`).
+- `default`: The default SMS driver (e.g., `bulk_sms`).
 - `drivers`: An array of driver-specific configurations, such as API keys and base URLs.
 
 ---
