@@ -1,26 +1,26 @@
 {
-    "name": "amsiam/send-sms",
-    "description": "Send SMS through any bulk provider just using single package.",
-    "type": "library",
-    "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Amsiam\\SendSMS\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "Aslam Mahmud Siam",
-            "email": "amsiam990@gmail.com"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {},
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Amsiam\\SendSMS\\SendSMSServiceProvider"
-            ]
-        }
+  "name": "amsiam/send-sms",
+  "description": "Send SMS through any bulk provider just using single package.",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Amsiam\\SendSMS\\": "src/"
     }
+  },
+  "authors": [
+    {
+      "name": "Aslam Mahmud Siam",
+      "email": "amsiam990@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {},
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Amsiam\\SendSMS\\SendSMSServiceProvider"
+      ]
+    }
+  }
 }
